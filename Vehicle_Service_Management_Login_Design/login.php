@@ -15,7 +15,7 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
         $_SESSION['user_id'] = $u['id'];
         $_SESSION['user_name'] = $u['name'];
         $_SESSION['user_role'] = 'customer';
-        header('Location: my-appointments.php');
+        header('Location: booking.php');
         exit;
     }
     $msg = 'We could not sign you in. Check your email and password, then try again.';
